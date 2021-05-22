@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Details</title>
+    <link rel="stylesheet" href="/cat_detail_style.css">
+</head>
+<body>
+<div class="container">
+    <% for (let x in cats) { %>
+        <img src="<%= cats[x].image %>" alt="">       
+        <h3>Details Page for <%= cats[x].name %></h3>
+        <h4>Sleeping spots: <%= cats[x].sleeping_spots %></h4>
+        <h4>Favorite Food: <%= cats[x].food %></h4>
+        <h4>Age: <%= cats[x].age %></h4>
+    <% } %>
+</div>
+</body>
+</html>
